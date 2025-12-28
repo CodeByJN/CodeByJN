@@ -1,35 +1,41 @@
 <svg width="850" height="100" viewBox="0 0 850 100" xmlns="http://www.w3.org/2000/svg">
-  
   <defs>
-    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <linearGradient id="rotating-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff" />
+      <stop offset="50%" stop-color="#9d00ff" />
+      <stop offset="100%" stop-color="#00d4ff" />
+      <animateTransform attributeName="gradientTransform" 
+                        type="rotate" 
+                        from="0 0.5 0.5" 
+                        to="360 0.5 0.5" 
+                        dur="3s" 
+                        repeatCount="indefinite" />
+    </linearGradient>
+
+    <filter id="slim-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
     </filter>
   </defs>
 
   <style>
-    .glow-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 20px;
+    .text-style {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 19px;
       font-weight: 800;
       text-anchor: middle;
       dominant-baseline: middle;
     }
   </style>
 
-  <text x="50%" y="50%" class="glow-text" fill="none" stroke-width="5" filter="url(#neon-glow)">
-    <animate attributeName="stroke" 
-             values="#00d4ff;#9d00ff;#00d4ff" 
-             dur="3s" 
-             repeatCount="indefinite" />
+  <text x="50%" y="50%" class="text-style" 
+        fill="none" 
+        stroke="url(#rotating-grad)" 
+        stroke-width="3" 
+        filter="url(#slim-blur)">
     Welcome to my github! My name is Jordan and I am a Full-Stack Developer based in Ottawa
   </text>
 
-  <text x="50%" y="50%" class="glow-text" fill="#000000">
+  <text x="50%" y="50%" class="text-style" fill="#000000">
     Welcome to my github! My name is Jordan and I am a Full-Stack Developer based in Ottawa
   </text>
-
 </svg>
