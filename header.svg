@@ -1,11 +1,11 @@
-<svg width="850" height="100" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg">
+<svg width="850" height="100" viewBox="0 0 950 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="flow-grad" x1="0%" y1="0%" x2="200%" y2="0%">
-      <stop offset="0%" stop-color="#00dfd8" />   <stop offset="50%" stop-color="#87cefa" />  <stop offset="100%" stop-color="#00dfd8" /> <animateTransform attributeName="gradientTransform" 
+      <stop offset="0%" stop-color="#007cf0" />   <stop offset="25%" stop-color="#00dfd8" />  <stop offset="50%" stop-color="#7928ca" />  <stop offset="75%" stop-color="#00dfd8" />  <stop offset="100%" stop-color="#007cf0" /> <animateTransform attributeName="gradientTransform" 
                         type="translate" 
                         from="-1 0" 
                         to="0 0" 
-                        dur="3s" 
+                        dur="4s" 
                         repeatCount="indefinite" />
     </linearGradient>
 
@@ -32,7 +32,7 @@
     Welcome to my github! My name is Jordan and I am a Full-Stack Developer based in Ottawa
   </text>
 
-  <text x="50%" y="50%" class="text-style" fill="#ffffff">
+  <text x="50%" y="50%" class="text-style" fill="#000000">
     Welcome to my github! My name is Jordan and I am a Full-Stack Developer based in Ottawa
   </text>
 </svg>
